@@ -15,12 +15,7 @@ public class MainController {
         return "Vigor-get";
     }
 
-    //переадресация на страницу "Приемущество"
-    @GetMapping("/Advantages")
-    public String Advantages( Model model) {
-        model.addAttribute("title", "Vigor - катера");
-        return "Advantages";
-    }
+
 
     //переадресация на админ панель сайта
     @GetMapping("/admin")
