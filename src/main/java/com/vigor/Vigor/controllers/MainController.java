@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     @GetMapping("/")
-    public String greeting( Model model) {
+    public String Vigor( Model model) {
         model.addAttribute("title", "Vigor - катера");
         return "Vigor-get";
     }
