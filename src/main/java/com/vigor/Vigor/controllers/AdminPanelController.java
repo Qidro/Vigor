@@ -6,17 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class AdvantagesController {
-
+public class AdminPanelController {
     //переадресация на страницу "Приемущество"
-    @GetMapping("/Advantages")
-    public String Advantages( Model model) {
-        model.addAttribute("title", "Наши приемущества");
-        return "Advantages";
-    }
-
-    @PostMapping("/Advantages")
-    public String AddAdvantages( Model model) {
+    @PostMapping("/admin/add_boat")
+    public String HonePanel( Model model) {
         model.addAttribute("title", "Наши приемущества");
         return "Advantages";
     }
