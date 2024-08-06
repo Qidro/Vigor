@@ -13,4 +13,10 @@ public class AdminPanelController {
         model.addAttribute("title", "Наши приемущества");
         return "Advantages";
     }
+
+    @PostMapping("/admin/add_advantages")
+    public String AddAdvantages( Model model) {
+        model.addAttribute("title", "Редактирование Наши приемущества");
+        return "Add-Advantages";
+    }
 }
